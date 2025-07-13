@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="flex flex-col gap-20 px-10 md:px-20 w-full">
+    <div class="flex flex-col gap-28 px-10 md:px-20 w-full z-50">
         <header class="flex items-center justify-between">
             <div class="relative flex items-center space-x-1 font-extrabold min-w-24">
                 <span class="border-y-2 border-l-2 border-black px-2 rounded-sm text-black">V</span>
@@ -32,7 +32,7 @@
             </button>
         </header>
         <!-- hero section -->
-        <section class="relative px-6 md:px-16 py-16 text-black border border-red-500">
+        <section class="relative px-6 md:px-16 py-16 text-black">
             <div class="flex flex-col-reverse lg:flex-row justify-between items-center gap-12">
                 <div class="flex-1 text-center lg:text-left">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6">Interior Design</h1>
@@ -225,10 +225,75 @@
                 >
             </div>
         </section>
-        <section class="newsletter">newsletter section</section>
+        <!-- newsletter section -->
+        <section class="-mb-8 self-center flex flex-col items-center justify-center gap-10 rounded overflow-hidden w-[350px] md:w-[500px] z-10">
+            <div class="flex flex-col items-center text-center gap-10 mx-10">
+                <h4 class="text-xl md:text-3xl font-bold">
+                Subscribe to Our Newsletter for Design Insights
+                </h4>
+                <p class="text-secondary text-xs md:text-sm">
+                    Be the first to discover trends, inspirations, and special offers as we bring the world of design directly to your inbox
+                </p>
+            </div>
+            <div class="w-full flex items-center justify-between  p-1 bg-white shadow-[0_0_30px_rgba(0,0,0,0.08)]">
+                <div class="flex-1 ml-2 bg-transparent flex items-center justify-center gap-2">
+                    <img 
+                        class="size-5"
+                        src="./assets/icons/mail-icon.png"
+                        alt="mail icon"
+                    >
+                    <input 
+                        placeholder="Enter your email address"
+                        type="email" 
+                        class="w-full border-none outline-none bg-transparent text-black placeholder:text-secondary"
+                    >
+                </div>
+                <button class="md:self-start bg-primary hover:bg-gray-900 text-white px-6 py-3 rounded cursor-pointer">
+                    Subscribe
+                </button>
+            </div>
+        </section>
     </div>
-    <footer class="w-full bg-primary text-white">
-        footer
+    <footer class="flex flex-col md:flex-row items-start justify-center gap-20 w-full bg-primary text-white px-6 md:px-20 py-16">
+        <div class="flex flex-col gap-10">
+            <div class="relative flex items-center space-x-1 font-extrabold min-w-24">
+                <span class="border-y-2 border-l-2 border-white px-2 rounded-sm text-white">V</span>
+                <span class="absolute left-6 text-white">ivaDecor</span>
+            </div>
+            <p class="text-gray-300">
+                VivaDecor your premier destination for luxury and modern interior design
+            </p>
+            <div class="flex items-center gap-4 mt-2">
+                <img src="./assets/icons/footer/Facebook.png" alt="facebook" class="size-7 cursor-pointer" />
+                <img src="./assets/icons/footer/X.png" alt="twitter" class="size-7 cursor-pointer" />
+                <img src="./assets/icons/footer/Instagram.png" alt="instagram" class="size-7 cursor-pointer" />
+                <img src="./assets/icons/footer/Linkdin.png" alt="linkedin" class="size-7 cursor-pointer" />
+            </div>
+        </div>
+        <div class="flex items-start justify-center gap-10 w-full">
+            <div class="flex flex-col gap-2">
+                <h6 class="text-white font-semibold mb-2">Our Services</h6>
+                <p class="text-sm text-gray-300 cursor-pointer hover:text-white">Interior design</p>
+                <p class="text-sm text-gray-300 cursor-pointer hover:text-white">Outdoor design</p>
+                <p class="text-sm text-gray-300 cursor-pointer hover:text-white">Lighting design</p>
+                <p class="text-sm text-gray-300 cursor-pointer hover:text-white">Office design</p>
+            </div>
+            
+            <div class="flex flex-col gap-2">
+                <h6 class="text-white font-semibold mb-2">Our Services</h6>
+                <p class="text-sm text-gray-300 cursor-pointer hover:text-white">Reviews</p>
+                <p class="text-sm text-gray-300 cursor-pointer hover:text-white">Careers</p>
+                <p class="text-sm text-gray-300 cursor-pointer hover:text-white">Pricing</p>
+                <p class="text-sm text-gray-300 cursor-pointer hover:text-white">Press Inquires</p>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h6 class="text-white font-semibold mb-2">Our Services</h6>
+                <p class="text-sm text-gray-300">info@vivadecor.com</p>
+                <p class="text-sm text-gray-300">Design Avenue Cityville,</p>
+                <p class="text-sm text-gray-300">CA 90210 United States</p>
+            </div>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
